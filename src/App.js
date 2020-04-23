@@ -55,7 +55,7 @@ class App extends Component{
 
 
 loadUser = (data) => {
-  this.setState(initialState);
+  //this.setState(initialState);
   this.setState({user: {
     id: data.id,
     name: data.name,
@@ -118,7 +118,7 @@ onButtonSubmit=()=>{
 
 onRouteChange = (route) =>{
   if (route === 'signout'){
-    this.setState({initialState})
+    this.setState(initialState)
   } else if(route === 'home'){
     this.setState({isSignedIn: true})
   }
